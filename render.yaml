@@ -1,0 +1,7 @@
+static_sites:
+  - name: tzveti
+    build_command: null
+    publish_dir: index
+    env:
+      - key: RENDER_DEFAULT_DOCUMENT
+        value: home.html
