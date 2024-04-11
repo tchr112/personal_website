@@ -1,0 +1,254 @@
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700,800');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,700');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/leone-venter-VieM9BdZKFo-unsplash.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            justify-content: right;
+            height: 100vh;
+
+        }
+
+        .header h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 100px;
+            font-weight: 300;
+            text-align: left;
+            padding-right: 50px;
+            color: hsl(310, 22%, 25%);
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: hsl(310, 22%, 25%);
+        }
+
+        .header p {
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+            color: #000000;
+            text-decoration: underline;
+            padding-right: 50px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 46px;
+            margin-bottom: 20px;
+            color: hsl(310, 22%, 25%);
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: hsl(310, 22%, 25%);
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 30px;
+            display: flex;
+            align-items: center
+        }
+
+        .container p {
+            flex-basis: 70%;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .container:hover p {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        /* Contact Section */
+        footer {
+            background-image: linear-gradient(to right, #d9d9d9, #e6e6e6);
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        footer form {
+            max-width: 500px;
+            margin: auto;
+            padding-top: 20px
+        }
+
+
+
+        /* Navigation Bar */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-image: linear-gradient(to right, #d9d9d9, #e6e6e6);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        nav li {
+            display: inline-block
+        }
+
+        nav a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px
+        }
+
+        nav a:hover {
+            color: #fff
+        }
+
+
+
+        #skills img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        /* Skills Grid */
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #skills li {
+            display: flex;
+            align-items: center;
+        }
+
+        #skills .container {
+            justify-content: center;
+            max-width: 800px;
+        }
+
+        /* For big screens */
+        @media (min-width: 1200px) {}
+
+        /* For laptop screens */
+        @media (min-width: 992px) and (max-width: 1199px) {}
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .hero {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #skills ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                width: 100%;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form {
+                margin-right: 0;
+                margin-top: 20px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            section h2 {
+                font-size: 36px;
+            }
+
+            .header h1 {
+                font-size: 80px;
+            }
+
+            .contact-container img {
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #skills ul {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                width: 100%;
+            }
+
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form {
+                margin-right: 0;
+                margin-top: 20px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            section h2 {
+                font-size: 36px;
+            }
+
+            .header h1 {
+                font-size: 80px;
+            }
+
+            .contact-container img {
+                margin-left: 20px;
+            }
+        }
+    
