@@ -109,16 +109,23 @@ section h2 {
 
 #projects p, #projects video{
     text-align: center;
+    width:100%;
 }
 
 #projects h3 {
     text-align: center;
 }
 
-video {
-    width: 500px;
-    /* Set a fixed width */
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    height:auto
 }
+
 
 /* Navigation Bar */
 nav {
